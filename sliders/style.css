@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* max-width: 100%; */
+  background-color: #ccc;
+}
+.container{
+  position: relative;
+  background-color: #fff;
+  width: 75%;
+  height: 500px;
+  box-shadow: 0rem 5rem 5rem rgba(0, 0, 0,0.2);
+  overflow: hidden;
+}
+.coursel-wrapper{
+  display: flex;
+  height: 91%;
+  
+}
+.coursel-wrapper .slider{
+  min-width: 100%;
+  
+}
+
+.coursel-wrapper .slider img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+.nav-dots{
+position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 10px 0;
+}
+.nav-dots .dot{
+border: 2px solid #777;
+border-radius: 50%;
+padding: 4px;
+width: 10px ;
+height: 10px;
+margin: 0 5px;
+}
+.active{
+  background-color: #000;
+}
+ .container .next,.container .prev{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  user-select: none;
+}
+ 
+.container .prev{
+left: 10px;
+}
+.container .next{
+right: 10px;
+}
+@media screen and (max-width:991px){
+  
+}
